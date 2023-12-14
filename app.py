@@ -15,7 +15,7 @@ import json
 import openai
 
 # Set your OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("KEY")
 
 def generate_sentence(analysis_results):
     prompt = f"SEO analysis for {analysis_results['title']} with keyword '{analysis_results['keyword']}'. "
